@@ -1,0 +1,4 @@
+# 매월 1일~7일, 매일 오전 9시 5분에 리밸런싱 체크 (첫 영업일에만 실행됨)
+# crontab -e 로 편집 후 아래 줄 추가:
+
+5 9 1-7 * * cd /home/azin/국내상장통합전략 && /home/azin/.venv/bin/python auto_rebalance.py --execute >> /home/azin/국내상장통합전략/logs/cron.log 2>&1

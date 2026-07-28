@@ -1,0 +1,22 @@
+{
+    "_comment": "민감 정보는 .env 파일에서 관리됩니다. 이 파일에 키를 직접 입력하지 마세요.",
+    "api": {
+        "app_key": "${KIS_APP_KEY}",
+        "app_secret": "${KIS_APP_SECRET}",
+        "cano": "${KIS_CANO}",
+        "acnt_prdt_cd": "${KIS_ACNT_PRDT_CD}",
+        "use_mock": true
+    },
+    "_real_api_comment": "실전투자 전환 시 .env의 KIS_USE_MOCK=false + KIS_REAL_APP_KEY/SECRET/CANO 값을 사용",
+    "strategy": {
+        "vaa_weight": 0.5,
+        "dm_weight": 0.5,
+        "rebalance_day": "first_business_day",
+        "min_trade_amount": 10000
+    },
+    "notification": {
+        "enabled": true,
+        "telegram_token": "${TELEGRAM_TOKEN}",
+        "telegram_chat_id": "${TELEGRAM_CHAT_ID}"
+    }
+}

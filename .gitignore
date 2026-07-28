@@ -1,0 +1,13 @@
+# 민감 정보 — 절대 커밋하지 마세요
+.env
+telegram_bot.py
+.token_cache.json
+.real_token_cache.json
+
+# Python 캐시
+__pycache__/
+*.pyc
+*.pyo
+
+# 로그 파일
+logs/
